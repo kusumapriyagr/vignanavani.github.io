@@ -2,205 +2,699 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VignanaVani | Career & Interview Training</title>
-<meta name="description" content="VignanaVani career training, resume building, job search and interview preparation.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d40">
+  <meta name="description" content="Vignanavani career training: resume building, ATS optimization, LinkedIn, Naukri and interview preparation.">
+  <title>Vignanavani | Career Training & Job Readiness</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#172033;background:#f7f9fc}
-header{background:#101a3a;color:white;position:sticky;top:0;z-index:10}
-nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.logo{font-size:24px;font-weight:800}
-nav a{color:white;text-decoration:none;margin-left:12px;font-size:14px}
-.hero{background:linear-gradient(135deg,#101a3a,#263b8f);color:white;padding:75px 20px}
-.hero-inner{max-width:1100px;margin:auto}
-.badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff50;padding:7px 12px;border-radius:30px;margin-bottom:18px}
-h1{font-size:clamp(36px,6vw,60px);line-height:1.1;max-width:800px}
-.hero p{font-size:19px;max-width:700px;margin:22px 0}
-.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:6px 8px 6px 0;border:0;cursor:pointer}
-.primary{background:#ffcf33;color:#101a3a}
-.secondary{border:1px solid white;color:white}
-section{max-width:1100px;margin:auto;padding:60px 20px}
-.section-title{text-align:center;margin-bottom:35px}
-.section-title h2{font-size:33px;color:#101a3a}
-.section-title p{color:#667085}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:25px}
-.card{background:white;border:1px solid #e8ebf2;border-radius:14px;padding:25px;box-shadow:0 8px 25px #101a3a12}
-.card h3{margin:10px 0;color:#101a3a}
-.icon{font-size:30px}
-.highlight{background:#101a3a;color:white;border-radius:18px;padding:32px}
-.highlight h2{font-size:32px}
-.plan-duration{display:inline-block;background:#eef2ff;color:#263b8f;padding:5px 12px;border-radius:20px;font-weight:bold;font-size:14px}
-.price{font-size:40px;font-weight:800;color:#101a3a;margin:15px 0}
-ul{padding-left:20px;margin-top:15px}
-li{margin:8px 0}
-.contact{background:#eef2ff}
-form{max-width:650px;margin:auto;background:white;padding:25px;border-radius:14px;box-shadow:0 8px 25px #101a3a12}
-input,textarea{width:100%;padding:13px;margin:7px 0 15px;border:1px solid #d7dce7;border-radius:7px;font:inherit}
-footer{background:#101a3a;color:#cdd4e8;text-align:center;padding:28px 20px}
-.whatsapp{position:fixed;right:20px;bottom:20px;background:#20c66b;color:white;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:25px;z-index:20}
-@media(max-width:750px){
-nav{flex-direction:column}
-nav a{margin:0 6px}
-.grid,.pricing-grid{grid-template-columns:1fr}
-.hero{padding:55px 20px}
-section{padding:42px 20px}
-.highlight{padding:20px}
-}
-</style>
+  <style>
+    :root {
+      --navy: #101d40;
+      --blue: #2456db;
+      --yellow: #ffcf40;
+      --light: #f4f7ff;
+      --text: #25314a;
+      --muted: #65718a;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 15px #101d4010;
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--navy);
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -.8px;
+    }
+
+    .logo span { color: var(--blue); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 10px;
+      padding: 13px 22px;
+      background: var(--blue);
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      transition: .2s;
+    }
+
+    .btn:hover { transform: translateY(-2px); opacity: .92; }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      border: 1px solid #ffffff80;
+      background: transparent;
+      color: white;
+    }
+
+    .hero {
+      color: white;
+      background:
+        radial-gradient(ellipse at 90% 15%, #3159b955, transparent 35%),
+        linear-gradient(135deg, #101d40, #182d60);
+      padding: 88px 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 45px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #ffffff15;
+      color: var(--yellow);
+      border: 1px solid #ffffff30;
+      border-radius: 30px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(37px, 5vw, 60px);
+      line-height: 1.12;
+      letter-spacing: -1.8px;
+      margin-bottom: 22px;
+    }
+
+    h1 span { color: var(--yellow); }
+
+    .hero p {
+      color: #dce5ff;
+      font-size: 17px;
+      max-width: 590px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-card {
+      background: #ffffff12;
+      border: 1px solid #ffffff30;
+      border-radius: 22px;
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card h3 { color: var(--yellow); margin-bottom: 15px; }
+
+    .hero-card li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #ffffff20;
+    }
+
+    .hero-card li:last-child { border-bottom: 0; }
+
+    .section { padding: 76px 0; }
+
+    .section-light { background: var(--light); }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 42px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p { color: var(--muted); }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      border: 1px solid #e5eaf5;
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: 0 8px 25px #142b5807;
+    }
+
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #eaf0ff;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .feature h3 { color: var(--navy); margin-bottom: 8px; }
+
+    .feature p { color: var(--muted); font-size: 14px; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      max-width: 850px;
+      margin: auto;
+      align-items: stretch;
+    }
+
+    .price-card {
+      background: white;
+      border: 1px solid #e0e6f2;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 12px 35px #101d400a;
+      position: relative;
+    }
+
+    .price-card.premium {
+      border: 2px solid var(--blue);
+      box-shadow: 0 15px 40px #2456db18;
+    }
+
+    .popular {
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      background: var(--yellow);
+      color: var(--navy);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .duration {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .price-card h3 {
+      color: var(--navy);
+      font-size: 25px;
+      margin: 8px 0;
+    }
+
+    .old-price {
+      color: #8791a5;
+      text-decoration: line-through;
+      font-size: 17px;
+    }
+
+    .price {
+      font-size: 45px;
+      line-height: 1.3;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .offer-label {
+      color: #16804a;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .price-card ul { list-style: none; margin: 20px 0 26px; }
+
+    .price-card li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #edf0f7;
+    }
+
+    .price-card li::before {
+      content: "✓";
+      color: #16804a;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .price-card .btn { width: 100%; }
+
+    .timeline {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 20px;
+      padding: 20px;
+      background: white;
+      border: 1px solid #e3e9f5;
+      border-radius: 14px;
+      margin-bottom: 14px;
+    }
+
+    .day {
+      font-size: 14px;
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .timeline-item h3 { color: var(--navy); font-size: 17px; }
+
+    .timeline-item p { color: var(--muted); font-size: 14px; }
+
+    .faq-list { max-width: 800px; margin: auto; }
+
+    details {
+      border: 1px solid #e1e7f2;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      background: white;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    details p { color: var(--muted); margin-top: 12px; }
+
+    .contact-box {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      border-radius: 22px;
+      padding: 50px 25px;
+    }
+
+    .contact-box h2 {
+      font-size: clamp(27px, 4vw, 38px);
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: #dce5ff;
+      margin: 0 auto 24px;
+      max-width: 600px;
+    }
+
+    footer {
+      background: #0b1530;
+      color: #dce5ff;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer p + p { margin-top: 7px; color: #aebbd9; }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border-radius: 50px;
+      padding: 13px 18px;
+      background: #20bd65;
+      color: white;
+      box-shadow: 0 5px 20px #0002;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    @media (max-width: 760px) {
+      .nav-links { gap: 12px; }
+      .nav-links a:not(.btn) { display: none; }
+      .hero { padding: 60px 0; }
+      .hero-grid, .pricing-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 32px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .section { padding: 55px 0; }
+      .price-card { padding: 25px; }
+      .timeline-item { grid-template-columns: 1fr; gap: 5px; }
+      .popular { position: static; display: inline-block; margin-bottom: 12px; }
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-<nav>
-<div class="logo">VIGNANAVANI</div>
-<div>
-<a href="#home">Home</a>
-<a href="#training">Training</a>
-<a href="#fees">Plans</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+  <nav class="container">
+    <a class="logo" href="#home">Vignana<span>vani</span></a>
+    <div class="nav-links">
+      <a href="#programs">Programs</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#fees">Pricing</a>
+      <a class="btn" href="#contact">Enroll Now</a>
+    </div>
+  </nav>
 </header>
 
 <main>
-<section class="hero" id="home">
-<div class="hero-inner">
-<span class="badge">New Batch Starts 15th October</span>
-<h1>Build Your Profile. Prepare Better. Get Job-Ready.</h1>
-<p>Practical training in resume building, interview preparation, LinkedIn optimization, Naukri job search and career development.</p>
-<a class="btn primary" href="#fees">View Training Plans</a>
-<a class="btn secondary" href="https://wa.me/919581334232" target="_blank" rel="noopener">WhatsApp Us</a>
-</div>
-</section>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">YOUR CAREER. YOUR NEXT CHAPTER.</span>
+        <h1>Learn. Build. <span>Grow.</span> Get Hired.</h1>
+        <p>
+          Make your job search smarter with practical guidance on resume
+          building, ATS optimization, LinkedIn, Naukri and interview preparation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="#fees">Explore Training Plans →</a>
+          <a class="btn btn-outline" href="#programs">Explore Programs</a>
+        </div>
+      </div>
 
-<section id="training">
-<div class="section-title">
-<h2>What You Will Learn</h2>
-<p>Practical guidance to improve your profile and interview readiness.</p>
-</div>
-<div class="grid">
-<div class="card">
-<div class="icon">🎯</div>
-<h3>Interview Preparation</h3>
-<p>Prepare your self-introduction, HR answers, technical questions and interview strategy.</p>
-</div>
-<div class="card">
-<div class="icon">📄</div>
-<h3>Resume Building</h3>
-<p>Create a professional, ATS-friendly resume highlighting your skills and experience.</p>
-</div>
-<div class="card">
-<div class="icon">💼</div>
-<h3>LinkedIn Optimization</h3>
-<p>Improve your headline, About section, skills and professional profile.</p>
-</div>
-<div class="card">
-<div class="icon">🔎</div>
-<h3>Job Search Strategy</h3>
-<p>Learn to find relevant vacancies and approach recruiters professionally.</p>
-</div>
-<div class="card">
-<div class="icon">📱</div>
-<h3>Naukri Profile</h3>
-<p>Improve profile keywords, job preferences and application strategy.</p>
-</div>
-<div class="card">
-<div class="icon">🗣️</div>
-<h3>Mock Interviews</h3>
-<p>Practice answering questions and improve confidence and communication.</p>
-</div>
-</div>
-</section>
+      <div class="hero-card">
+        <h3>Your Career Readiness Journey</h3>
+        <ul>
+          <li>✓ Build an ATS-friendly resume</li>
+          <li>✓ Improve your LinkedIn profile</li>
+          <li>✓ Optimize your Naukri profile</li>
+          <li>✓ Learn job search strategies</li>
+          <li>✓ Practice interview skills</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<!-- ONLY TWO TRAINING PLANS -->
-<section id="fees">
-<div class="highlight">
-<h2>Our Training Plans</h2>
-<p>Classes start from <strong>15th October</strong>. Choose your plan.</p>
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Everything You Need to Prepare for Your Next Opportunity</h2>
+        <p>Practical career guidance to help you present your skills confidently.</p>
+      </div>
 
-<div class="pricing-grid">
-<div class="card">
-<span class="plan-duration">7 Days</span>
-<h3>Standard Plan</h3>
-<div class="price">₹1,499</div>
-<ul>
-<li>Resume building</li>
-<li>LinkedIn profile optimization</li>
-<li>Naukri profile optimization</li>
-<li>LinkedIn job search and recruiter outreach</li>
-<li>Job application strategy</li>
-</ul>
-<a class="btn primary" href="#contact">Enquire Now</a>
-</div>
+      <div class="grid-3">
+        <article class="feature">
+          <div class="feature-icon">📄</div>
+          <h3>Resume Building</h3>
+          <p>Create a professional, ATS-friendly resume that highlights your skills, experience and achievements.</p>
+        </article>
 
-<div class="card">
-<span class="plan-duration">10 Days</span>
-<h3>Premium Plan</h3>
-<div class="price">₹2,499</div>
-<ul>
-<li>Everything included in Standard</li>
-<li>Interview preparation</li>
-<li>Mock interview practice</li>
-<li>Personal feedback and guidance</li>
-<li>Additional training days for practice</li>
-</ul>
-<a class="btn primary" href="#contact">Enquire Now</a>
-</div>
-</div>
-</div>
-</section>
+        <article class="feature">
+          <div class="feature-icon">💼</div>
+          <h3>LinkedIn Optimization</h3>
+          <p>Improve your headline, About section, skills and professional presentation.</p>
+        </article>
 
-<section id="about">
-<div class="section-title"><h2>About VignanaVani</h2></div>
-<div class="card">
-<p><strong>VignanaVani</strong> focuses on practical career and interview preparation. Our goal is to help job seekers present their skills professionally, find relevant opportunities and prepare confidently for interviews.</p>
-</div>
-</section>
+        <article class="feature">
+          <div class="feature-icon">🔎</div>
+          <h3>Naukri Profile</h3>
+          <p>Improve your profile, key skills, resume visibility and recruiter discoverability.</p>
+        </article>
 
-<section id="contact" class="contact">
-<div class="section-title">
-<h2>Contact VignanaVani</h2>
-<p>Send your details to enquire about a training plan.</p>
-</div>
-<form onsubmit="sendWhatsApp(event)">
-<label for="name">Name</label>
-<input id="name" required placeholder="Your name">
-<label for="phone">Phone</label>
-<input id="phone" type="tel" required placeholder="Your phone number">
-<label for="message">Message</label>
-<textarea id="message" rows="4" placeholder="Which plan are you interested in?"></textarea>
-<button class="btn primary" type="submit">Send Enquiry on WhatsApp</button>
-</form>
-</section>
+        <article class="feature">
+          <div class="feature-icon">🎯</div>
+          <h3>Job Search Strategy</h3>
+          <p>Learn to identify relevant vacancies and organize your applications effectively.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🎤</div>
+          <h3>Interview Preparation</h3>
+          <p>Practice common questions, scenario-based questions and clear answer delivery.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🚀</div>
+          <h3>Career Guidance</h3>
+          <p>Build a structured action plan for presenting your experience and pursuing suitable roles.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="fees">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Choose Your Training Plan</h2>
+        <p>Choose the duration and level of guidance that works for you.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <span class="duration">7-Day Program</span>
+          <h3>Standard Plan</h3>
+          <p class="old-price">₹1,499</p>
+          <div class="price">₹599</div>
+          <p class="offer-label">Special Offer Price</p>
+
+          <ul>
+            <li>ATS-friendly resume building</li>
+            <li>LinkedIn profile optimization</li>
+            <li>Naukri profile optimization</li>
+            <li>Job search strategy</li>
+            <li>Job application guidance</li>
+            <li>Interview preparation fundamentals</li>
+          </ul>
+
+          <a class="btn" href="#contact" onclick="selectPlan('Standard Plan - ₹599')">
+            Choose Standard
+          </a>
+        </article>
+
+        <article class="price-card premium">
+          <span class="popular">PREMIUM PLAN</span>
+          <span class="duration">10-Day Program</span>
+          <h3>Premium Plan</h3>
+          <p class="old-price">₹2,499</p>
+          <div class="price">₹999</div>
+          <p class="offer-label">Special Offer Price</p>
+
+          <ul>
+            <li>Everything in Standard</li>
+            <li>More in-depth interview preparation</li>
+            <li>Scenario-based practice</li>
+            <li>Mock interview practice</li>
+            <li>Personal feedback and guidance</li>
+            <li>Additional practice days</li>
+          </ul>
+
+          <a class="btn btn-yellow" href="#contact" onclick="selectPlan('Premium Plan - ₹999')">
+            Choose Premium
+          </a>
+        </article>
+      </div>
+
+      <p style="text-align:center;color:#65718a;font-size:12px;margin-top:20px;">
+        Training content and guidance are provided as described. Job offers and interview
+        selection are not guaranteed.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="roadmap">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Your Career Preparation Roadmap</h2>
+        <p>A structured example of how your training can progress.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="day">DAY 1–2</div>
+          <div>
+            <h3>Resume and ATS Fundamentals</h3>
+            <p>Resume structure, keyword alignment and presenting achievements clearly.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="day">DAY 3–4</div>
+          <div>
+            <h3>LinkedIn and Naukri</h3>
+            <p>Profile improvement, skills, summaries and recruiter visibility.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="day">DAY 5–7</div>
+          <div>
+            <h3>Job Search and Applications</h3>
+            <p>Finding relevant roles, matching skills to job descriptions and tracking applications.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="day">DAY 8–10</div>
+          <div>
+            <h3>Interview Practice</h3>
+            <p>Mock interviews, scenario-based questions and feedback for Premium participants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="faq">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Frequently Asked Questions</h2>
+        <p>Important details before you enroll.</p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>What is the difference between Standard and Premium?</summary>
+          <p>Standard runs for 7 days and Premium runs for 10 days. Premium includes additional interview practice and guidance.</p>
+        </details>
+
+        <details>
+          <summary>Is this suitable for freshers and experienced candidates?</summary>
+          <p>The program can support both freshers and experienced candidates with resume preparation, profile improvement and interview practice.</p>
+        </details>
+
+        <details>
+          <summary>Will I get a guaranteed job?</summary>
+          <p>No. The program provides career preparation and guidance. Hiring decisions depend on employers and individual circumstances.</p>
+        </details>
+
+        <details>
+          <summary>How can I enroll?</summary>
+          <p>Select your preferred plan and contact Vignanavani through WhatsApp to discuss the program and enrollment process.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Ready to Take the Next Step?</h2>
+        <p>
+          Choose your training plan and contact Vignanavani to discuss enrollment.
+        </p>
+
+        <p id="selected-plan" style="font-weight:700;color:#ffcf40;">
+          Selected plan: Not selected
+        </p>
+
+        <a class="btn btn-yellow" id="enroll-whatsapp" href="#fees">
+          Enroll Through WhatsApp →
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<a class="whatsapp" href="https://wa.me/919581334232" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
-
 <footer>
-<p><strong>VIGNANAVANI</strong></p>
-<p>Career & Interview Training</p>
-<p>Call / WhatsApp: 9581334232</p>
-<p>Instagram: @vignanavaani</p>
-<p>Email: vignanavaani03@gmail.com</p>
-<p>© 2026 VignanaVani. All rights reserved.</p>
+  <div class="container">
+    <a class="logo" href="#home" style="color:white;">Vignana<span>vani</span></a>
+    <p>Career Preparation • Resume Building • Interview Guidance</p>
+    <p>© <span id="year"></span> Vignanavani. All rights reserved.</p>
+  </div>
 </footer>
 
+<a class="whatsapp-float" id="floating-whatsapp" href="#contact" aria-label="Contact Vignanavani">
+  WhatsApp Us
+</a>
+
 <script>
-function sendWhatsApp(event){
-event.preventDefault();
-const name=document.getElementById("name").value;
-const phone=document.getElementById("phone").value;
-const message=document.getElementById("message").value;
-const text="Hi VignanaVani, I want to enquire about the training.\nName: "+name+"\nPhone: "+phone+"\nMessage: "+message;
-window.open("https://wa.me/919581334232?text="+encodeURIComponent(text),"_blank");
-}
+  /*
+   * IMPORTANT:
+   * Replace the placeholder below with your WhatsApp number.
+   * Include the country code, digits only, without + or spaces.
+   * Example format for India: 919876543210
+   */
+  const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+
+  let selectedPlan = "";
+
+  function selectPlan(plan) {
+    selectedPlan = plan;
+    document.getElementById("selected-plan").textContent =
+      "Selected plan: " + plan;
+    updateWhatsAppLinks();
+  }
+
+  function updateWhatsAppLinks() {
+    const message = selectedPlan
+      ? "Hello Vignanavani! I am interested in enrolling in the " +
+        selectedPlan + ". Please share the enrollment details."
+      : "Hello Vignanavani! Please share your career training program details.";
+
+    const numberIsConfigured = /^\d{10,15}$/.test(WHATSAPP_NUMBER);
+
+    const link = numberIsConfigured
+      ? "https://wa.me/" + WHATSAPP_NUMBER + "?text=" +
+        encodeURIComponent(message)
+      : "#contact";
+
+    document.getElementById("enroll-whatsapp").href = link;
+    document.getElementById("floating-whatsapp").href = link;
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  updateWhatsAppLinks();
 </script>
+
 </body>
 </html>
-
